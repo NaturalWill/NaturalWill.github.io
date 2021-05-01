@@ -9,6 +9,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
   <link rel="mask-icon" href="/images/favicon.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -20,7 +22,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.naturalwill.me","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"blog.naturalwill.me","root":"/","scheme":"Gemini","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="记录 TeamTalk Server 的部署过程，仅供大家参考。 为了简化问题，全程采用 root 操作。 编译前准备环境操作系统: Ubuntu 16.04.2 LTS (GNU&#x2F;Linux 4.4.0-62-generic x86_64) 域名： teamtalk.naturalwill.me IP: 192.168.1.70">
@@ -121,27 +123,27 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档<span class="badge">45</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">45</span></a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签<span class="badge">38</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">38</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="th fa-fw"></i>分类<span class="badge">15</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">15</span></a>
 
   </li>
         <li class="menu-item menu-item-links">
 
-    <a href="/links/" rel="section"><i class="link fa-fw"></i>链接</a>
+    <a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>链接</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -184,7 +186,7 @@
   <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
-  <a href="https://github.com/naturalwill" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener external nofollow noreferrer" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL25hdHVyYWx3aWxs" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
 
 
     <main class="main">
@@ -299,7 +301,7 @@ sed -i &#39;s/register_long_arrays = On/;register_long_arrays = On/g&#39; /etc/p
 sed -i &#39;s/magic_quotes_gpc = On/;magic_quotes_gpc = On/g&#39; /etc/php/5.6/fpm/php.ini
 sed -i &#39;s/disable_functions =.*/disable_functions = passthru,exec,system,chroot,scandir,chgrp,chown,shell_exec,proc_open,proc_get_status,ini_alter,ini_restore,dl,openlog,syslog,readlink,symlink,popepassthru,stream_socket_server/g&#39; /etc/php/5.6/fpm/php.ini
 </code></pre>
-<h3 id="安装-PHP-zend-loader-（可选）"><a href="#安装-PHP-zend-loader-（可选）" class="headerlink" title="安装 PHP zend-loader （可选）"></a>安装 PHP zend-loader （可选）</h3><p>安装对应版本的 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.zend.com/en/products/loader/downloads#Linux">Zend Guard Loader</a></p>
+<h3 id="安装-PHP-zend-loader-（可选）"><a href="#安装-PHP-zend-loader-（可选）" class="headerlink" title="安装 PHP zend-loader （可选）"></a>安装 PHP zend-loader （可选）</h3><p>安装对应版本的 <span class="exturl" data-url="aHR0cDovL3d3dy56ZW5kLmNvbS9lbi9wcm9kdWN0cy9sb2FkZXIvZG93bmxvYWRzI0xpbnV4">Zend Guard Loader<i class="fa fa-external-link-alt"></i></span></p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget http://downloads.zend.com/guard/7.0.0/zend-loader-php5.6-linux-x86_64_update1.tar.gz</span><br><span class="line">mkdir -p /usr/<span class="built_in">local</span>/zend/ <span class="comment">#1489462850:0</span></span><br><span class="line">tar -xzvf zend-loader-php5.6-linux-x86_64_update1.tar.gz</span><br><span class="line">cp zend-loader-php5.6-linux-x86_64/*.so /usr/<span class="built_in">local</span>/zend/</span><br></pre></td></tr></table></figure>
 
 <p>修改 PHP 配置文件 <code>/etc/php/5.6/fpm/php.ini</code> ，在文件末尾添加：</p>
@@ -782,8 +784,8 @@ PostThreadCount=1
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> db_proxy_server &amp;&amp; daeml db_proxy_server &amp;&amp; <span class="built_in">cd</span> ..</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> route_server &amp;&amp; daeml route_server &amp;&amp; <span class="built_in">cd</span> ..</span><br><span class="line"><span class="built_in">cd</span> file_server &amp;&amp; daeml file_server &amp;&amp; <span class="built_in">cd</span> ..</span><br><span class="line"><span class="built_in">cd</span> msfs &amp;&amp; daeml msfs &amp;&amp; <span class="built_in">cd</span> ..</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> login_server &amp;&amp; daeml login_server &amp;&amp; <span class="built_in">cd</span> ..</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> push_server &amp;&amp; daeml push_server &amp;&amp; <span class="built_in">cd</span> ..</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> msg_server &amp;&amp; daeml msg_server &amp;&amp; <span class="built_in">cd</span> ..</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> http_msg_server &amp;&amp; daeml http_msg_server &amp;&amp; <span class="built_in">cd</span> ..</span><br></pre></td></tr></table></figure>
 
 
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>蓝狐 的 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://web.archive.org/web/20161014070359/http://bluefoxah.org/teamtalk/new_tt_deploy.html">新版TeamTalk部署教程</a></p>
-<p>luoxn28 的 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.cnblogs.com/luoxn28/p/5348649.html">TeamTalk源码分析之服务端描述</a></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>蓝狐 的 <span class="exturl" data-url="aHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMTYxMDE0MDcwMzU5L2h0dHA6Ly9ibHVlZm94YWgub3JnL3RlYW10YWxrL25ld190dF9kZXBsb3kuaHRtbA==">新版TeamTalk部署教程<i class="fa fa-external-link-alt"></i></span></p>
+<p>luoxn28 的 <span class="exturl" data-url="aHR0cDovL3d3dy5jbmJsb2dzLmNvbS9sdW94bjI4L3AvNTM0ODY0OS5odG1s">TeamTalk源码分析之服务端描述<i class="fa fa-external-link-alt"></i></span></p>
 
     </div>
 
@@ -808,6 +810,23 @@ PostThreadCount=1
       </div>
 
   </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>NaturalWill
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://blog.naturalwill.me/2017/03/29/Compile-and-deploy-TeamTalk-in-Ubuntu-Server-16-04/" title="TeamTalk server 编译与部署笔记">https://blog.naturalwill.me/2017/03/29/Compile-and-deploy-TeamTalk-in-Ubuntu-Server-16-04/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
 </div>
 
 
@@ -924,11 +943,14 @@ PostThreadCount=1
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/NaturalWill" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;NaturalWill" rel="noopener external nofollow noreferrer" target="_blank"><i class="github fa-fw"></i></a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL05hdHVyYWxXaWxs" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;NaturalWill"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:owner@naturalwill.me" title="E-Mail → mailto:owner@naturalwill.me" rel="noopener" target="_blank"><i class="envelope fa-fw"></i></a>
+        <span class="exturl" data-url="bWFpbHRvOm93bmVyQG5hdHVyYWx3aWxsLm1l" title="E-Mail → mailto:owner@naturalwill.me"><i class="fa fa-envelope fa-fw"></i></span>
       </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
   </div>
 
 
@@ -941,7 +963,7 @@ PostThreadCount=1
           <a href="https://blog.naturalwill.me/" title="https:&#x2F;&#x2F;blog.naturalwill.me">Home</a>
         </li>
         <li class="links-of-blogroll-item">
-          <a href="https://naturalwill.gitee.io/" title="https:&#x2F;&#x2F;naturalwill.gitee.io" rel="noopener" target="_blank">Gitee Mirror</a>
+          <span class="exturl" data-url="aHR0cHM6Ly9uYXR1cmFsd2lsbC5naXRlZS5pbw==" title="https:&#x2F;&#x2F;naturalwill.gitee.io">Gitee Mirror</span>
         </li>
     </ul>
   </div>
@@ -971,11 +993,11 @@ PostThreadCount=1
   &copy; 2015 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
-    <i class="heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">NaturalWill</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> 强力驱动
   </div>
 
         

@@ -9,6 +9,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
   <link rel="mask-icon" href="/images/favicon.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -20,7 +22,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.naturalwill.me","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"blog.naturalwill.me","root":"/","scheme":"Gemini","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="Star PDF 转图片：  https:&#x2F;&#x2F;naturalwill.github.io&#x2F;pdf2png&#x2F;pdf2png.html  PDF 批量转图片：  https:&#x2F;&#x2F;naturalwill.github.io&#x2F;pdf2img&#x2F;  Rtmp|HLS 点播测试器： https:&#x2F;&#x2F;naturalwill.github.io&#x2F;rtmp-player&#x2F;   在线工具 在线电子书转换器: http:">
@@ -120,27 +122,27 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档<span class="badge">45</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">45</span></a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签<span class="badge">38</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">38</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="th fa-fw"></i>分类<span class="badge">15</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">15</span></a>
 
   </li>
         <li class="menu-item menu-item-links">
 
-    <a href="/links/" rel="section"><i class="link fa-fw"></i>链接</a>
+    <a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>链接</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -183,7 +185,7 @@
   <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
-  <a href="https://github.com/naturalwill" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener external nofollow noreferrer" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL25hdHVyYWx3aWxs" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
 
 
     <main class="main">
@@ -217,91 +219,91 @@
       
       <div class="post-body">
           <h2 id="Star"><a href="#Star" class="headerlink" title="Star"></a>Star</h2><ul>
-<li><p>PDF 转图片：  <a target="_blank" rel="noopener" href="https://naturalwill.github.io/pdf2png/pdf2png.html">https://naturalwill.github.io/pdf2png/pdf2png.html</a></p>
+<li><p>PDF 转图片：  <span class="exturl" data-url="aHR0cHM6Ly9uYXR1cmFsd2lsbC5naXRodWIuaW8vcGRmMnBuZy9wZGYycG5nLmh0bWw=">https://naturalwill.github.io/pdf2png/pdf2png.html<i class="fa fa-external-link-alt"></i></span></p>
 </li>
-<li><p>PDF 批量转图片：  <a target="_blank" rel="noopener" href="https://naturalwill.github.io/pdf2img/">https://naturalwill.github.io/pdf2img/</a></p>
+<li><p>PDF 批量转图片：  <span class="exturl" data-url="aHR0cHM6Ly9uYXR1cmFsd2lsbC5naXRodWIuaW8vcGRmMmltZy8=">https://naturalwill.github.io/pdf2img/<i class="fa fa-external-link-alt"></i></span></p>
 </li>
-<li><p>Rtmp|HLS 点播测试器： <a target="_blank" rel="noopener" href="https://naturalwill.github.io/rtmp-player/">https://naturalwill.github.io/rtmp-player/</a></p>
+<li><p>Rtmp|HLS 点播测试器： <span class="exturl" data-url="aHR0cHM6Ly9uYXR1cmFsd2lsbC5naXRodWIuaW8vcnRtcC1wbGF5ZXIv">https://naturalwill.github.io/rtmp-player/<i class="fa fa-external-link-alt"></i></span></p>
 </li>
 </ul>
 <h2 id="在线工具"><a href="#在线工具" class="headerlink" title="在线工具"></a>在线工具</h2><ul>
-<li>在线电子书转换器: <a target="_blank" rel="noopener external nofollow noreferrer" href="http://cn.epubee.com/">http://cn.epubee.com/</a></li>
-<li>Virus Total （可疑文件、网址分析）： <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.virustotal.com/">https://www.virustotal.com/</a></li>
-<li>135编辑器（微信推文）：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.135editor.com/">https://www.135editor.com/</a></li>
+<li>在线电子书转换器: <span class="exturl" data-url="aHR0cDovL2NuLmVwdWJlZS5jb20v">http://cn.epubee.com/<i class="fa fa-external-link-alt"></i></span></li>
+<li>Virus Total （可疑文件、网址分析）： <span class="exturl" data-url="aHR0cHM6Ly93d3cudmlydXN0b3RhbC5jb20v">https://www.virustotal.com/<i class="fa fa-external-link-alt"></i></span></li>
+<li>135编辑器（微信推文）：<span class="exturl" data-url="aHR0cHM6Ly93d3cuMTM1ZWRpdG9yLmNvbS8=">https://www.135editor.com/<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <h3 id="图片相关"><a href="#图片相关" class="headerlink" title="图片相关"></a>图片相关</h3><ul>
-<li>PNG and JPEG compression（图片压缩）： <a target="_blank" rel="noopener external nofollow noreferrer" href="https://tinypng.com/">https://tinypng.com/</a></li>
-<li>svg editor: <a target="_blank" rel="noopener external nofollow noreferrer" href="https://svg-edit.github.io/svgedit/releases/latest/editor/svg-editor.html">https://svg-edit.github.io/svgedit/releases/latest/editor/svg-editor.html</a></li>
+<li>PNG and JPEG compression（图片压缩）： <span class="exturl" data-url="aHR0cHM6Ly90aW55cG5nLmNvbS8=">https://tinypng.com/<i class="fa fa-external-link-alt"></i></span></li>
+<li>svg editor: <span class="exturl" data-url="aHR0cHM6Ly9zdmctZWRpdC5naXRodWIuaW8vc3ZnZWRpdC9yZWxlYXNlcy9sYXRlc3QvZWRpdG9yL3N2Zy1lZGl0b3IuaHRtbA==">https://svg-edit.github.io/svgedit/releases/latest/editor/svg-editor.html<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <h3 id="文本编辑器"><a href="#文本编辑器" class="headerlink" title="文本编辑器"></a>文本编辑器</h3><ul>
-<li>在线 Markdown 阅读器： <a target="_blank" rel="noopener external nofollow noreferrer" href="http://markdown.zhangjikai.com/">http://markdown.zhangjikai.com/</a></li>
-<li>StackEdit Markdown 编辑器： <a target="_blank" rel="noopener external nofollow noreferrer" href="https://stackedit.io/editor">https://stackedit.io/editor</a></li>
-<li>Cmd Markdown 编辑器： <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.zybuluo.com/mdeditor">https://www.zybuluo.com/mdeditor</a></li>
+<li>在线 Markdown 阅读器： <span class="exturl" data-url="aHR0cDovL21hcmtkb3duLnpoYW5namlrYWkuY29tLw==">http://markdown.zhangjikai.com/<i class="fa fa-external-link-alt"></i></span></li>
+<li>StackEdit Markdown 编辑器： <span class="exturl" data-url="aHR0cHM6Ly9zdGFja2VkaXQuaW8vZWRpdG9y">https://stackedit.io/editor<i class="fa fa-external-link-alt"></i></span></li>
+<li>Cmd Markdown 编辑器： <span class="exturl" data-url="aHR0cHM6Ly93d3cuenlidWx1by5jb20vbWRlZGl0b3I=">https://www.zybuluo.com/mdeditor<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <h3 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h3><ul>
-<li>各浏览器兼容性检查： <a target="_blank" rel="noopener external nofollow noreferrer" href="http://browsershots.org/">http://browsershots.org/</a></li>
-<li>浏览器信息检测: <a target="_blank" rel="noopener external nofollow noreferrer" href="http://tools.jb51.net/aideddesign/browser_info">http://tools.jb51.net/aideddesign/browser_info</a></li>
-<li>IP信息查询： <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.ip138.com/">http://www.ip138.com/</a></li>
-<li>正则表达式测试： <a target="_blank" rel="noopener external nofollow noreferrer" href="http://tool.chinaz.com/regex/">http://tool.chinaz.com/regex/</a></li>
-<li>在线测速： <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.speedtest.cn/">http://www.speedtest.cn/</a></li>
+<li>各浏览器兼容性检查： <span class="exturl" data-url="aHR0cDovL2Jyb3dzZXJzaG90cy5vcmcv">http://browsershots.org/<i class="fa fa-external-link-alt"></i></span></li>
+<li>浏览器信息检测: <span class="exturl" data-url="aHR0cDovL3Rvb2xzLmpiNTEubmV0L2FpZGVkZGVzaWduL2Jyb3dzZXJfaW5mbw==">http://tools.jb51.net/aideddesign/browser_info<i class="fa fa-external-link-alt"></i></span></li>
+<li>IP信息查询： <span class="exturl" data-url="aHR0cDovL3d3dy5pcDEzOC5jb20v">http://www.ip138.com/<i class="fa fa-external-link-alt"></i></span></li>
+<li>正则表达式测试： <span class="exturl" data-url="aHR0cDovL3Rvb2wuY2hpbmF6LmNvbS9yZWdleC8=">http://tool.chinaz.com/regex/<i class="fa fa-external-link-alt"></i></span></li>
+<li>在线测速： <span class="exturl" data-url="aHR0cDovL3d3dy5zcGVlZHRlc3QuY24v">http://www.speedtest.cn/<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <h4 id="工具集"><a href="#工具集" class="headerlink" title="工具集"></a>工具集</h4><ul>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://coolaf.com/">http://coolaf.com/</a> – Http测试、编码转换、两列文字对比</li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://tool.chinaz.com/">http://tool.chinaz.com/</a>  – 站长工具</li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://tool.oschina.net/">https://tool.oschina.net/</a>  – 开源中国在线工具</li>
+<li><span class="exturl" data-url="aHR0cDovL2Nvb2xhZi5jb20v">http://coolaf.com/<i class="fa fa-external-link-alt"></i></span> – Http测试、编码转换、两列文字对比</li>
+<li><span class="exturl" data-url="aHR0cDovL3Rvb2wuY2hpbmF6LmNvbS8=">http://tool.chinaz.com/<i class="fa fa-external-link-alt"></i></span>  – 站长工具</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0Lw==">https://tool.oschina.net/<i class="fa fa-external-link-alt"></i></span>  – 开源中国在线工具</li>
 </ul>
 <h4 id="接口测试"><a href="#接口测试" class="headerlink" title="接口测试"></a>接口测试</h4><ul>
-<li>Swagger Editor: <a target="_blank" rel="noopener external nofollow noreferrer" href="https://editor.swagger.io/">https://editor.swagger.io/</a></li>
-<li>Swagger UI: <a target="_blank" rel="noopener external nofollow noreferrer" href="https://petstore.swagger.io/">https://petstore.swagger.io/</a></li>
-<li>Websocket 测试: <a target="_blank" rel="noopener external nofollow noreferrer" href="http://coolaf.com/tool/chattest">http://coolaf.com/tool/chattest</a></li>
-<li>Websocket 测试: <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.websocket-test.com/">http://www.websocket-test.com/</a></li>
+<li>Swagger Editor: <span class="exturl" data-url="aHR0cHM6Ly9lZGl0b3Iuc3dhZ2dlci5pby8=">https://editor.swagger.io/<i class="fa fa-external-link-alt"></i></span></li>
+<li>Swagger UI: <span class="exturl" data-url="aHR0cHM6Ly9wZXRzdG9yZS5zd2FnZ2VyLmlvLw==">https://petstore.swagger.io/<i class="fa fa-external-link-alt"></i></span></li>
+<li>Websocket 测试: <span class="exturl" data-url="aHR0cDovL2Nvb2xhZi5jb20vdG9vbC9jaGF0dGVzdA==">http://coolaf.com/tool/chattest<i class="fa fa-external-link-alt"></i></span></li>
+<li>Websocket 测试: <span class="exturl" data-url="aHR0cDovL3d3dy53ZWJzb2NrZXQtdGVzdC5jb20v">http://www.websocket-test.com/<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <h4 id="编码、加密"><a href="#编码、加密" class="headerlink" title="编码、加密"></a>编码、加密</h4><ul>
-<li>二维码编解码-开源中国：  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://tool.oschina.net/qr?type=2">https://tool.oschina.net/qr?type=2</a></li>
-<li>二维码编解码-站长工具：  <a target="_blank" rel="noopener external nofollow noreferrer" href="http://tool.chinaz.com/qrcode">http://tool.chinaz.com/qrcode</a></li>
-<li>二维码生成： <a target="_blank" rel="noopener external nofollow noreferrer" href="https://easy-qr-code.aiddroid.com/">https://easy-qr-code.aiddroid.com/</a></li>
-<li>Unicode编码转换、URL编解码：  <a target="_blank" rel="noopener external nofollow noreferrer" href="http://tool.chinaz.com/Tools/Unicode.aspx">http://tool.chinaz.com/Tools/Unicode.aspx</a></li>
-<li>加密、Hash、BASE64：   <a target="_blank" rel="noopener external nofollow noreferrer" href="https://tool.oschina.net/encrypt">https://tool.oschina.net/encrypt</a></li>
-<li>File Hash、编解码： <a target="_blank" rel="noopener external nofollow noreferrer" href="https://emn178.github.io/online-tools/index.html">https://emn178.github.io/online-tools/index.html</a></li>
+<li>二维码编解码-开源中国：  <span class="exturl" data-url="aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L3FyP3R5cGU9Mg==">https://tool.oschina.net/qr?type=2<i class="fa fa-external-link-alt"></i></span></li>
+<li>二维码编解码-站长工具：  <span class="exturl" data-url="aHR0cDovL3Rvb2wuY2hpbmF6LmNvbS9xcmNvZGU=">http://tool.chinaz.com/qrcode<i class="fa fa-external-link-alt"></i></span></li>
+<li>二维码生成： <span class="exturl" data-url="aHR0cHM6Ly9lYXN5LXFyLWNvZGUuYWlkZHJvaWQuY29tLw==">https://easy-qr-code.aiddroid.com/<i class="fa fa-external-link-alt"></i></span></li>
+<li>Unicode编码转换、URL编解码：  <span class="exturl" data-url="aHR0cDovL3Rvb2wuY2hpbmF6LmNvbS9Ub29scy9Vbmljb2RlLmFzcHg=">http://tool.chinaz.com/Tools/Unicode.aspx<i class="fa fa-external-link-alt"></i></span></li>
+<li>加密、Hash、BASE64：   <span class="exturl" data-url="aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L2VuY3J5cHQ=">https://tool.oschina.net/encrypt<i class="fa fa-external-link-alt"></i></span></li>
+<li>File Hash、编解码： <span class="exturl" data-url="aHR0cHM6Ly9lbW4xNzguZ2l0aHViLmlvL29ubGluZS10b29scy9pbmRleC5odG1s">https://emn178.github.io/online-tools/index.html<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <h4 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h4><ul>
-<li>HTML/XML/CSS/Json/SQL 格式化： <a target="_blank" rel="noopener external nofollow noreferrer" href="https://tool.oschina.net/codeformat">https://tool.oschina.net/codeformat</a></li>
-<li>JS/HTML 格式化： <a target="_blank" rel="noopener external nofollow noreferrer" href="http://tool.chinaz.com/Tools/JsFormat.aspx">http://tool.chinaz.com/Tools/JsFormat.aspx</a></li>
-<li>CSS 格式化： <a target="_blank" rel="noopener external nofollow noreferrer" href="http://tool.lanrentuku.com/cssformat/">http://tool.lanrentuku.com/cssformat/</a></li>
+<li>HTML/XML/CSS/Json/SQL 格式化： <span class="exturl" data-url="aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L2NvZGVmb3JtYXQ=">https://tool.oschina.net/codeformat<i class="fa fa-external-link-alt"></i></span></li>
+<li>JS/HTML 格式化： <span class="exturl" data-url="aHR0cDovL3Rvb2wuY2hpbmF6LmNvbS9Ub29scy9Kc0Zvcm1hdC5hc3B4">http://tool.chinaz.com/Tools/JsFormat.aspx<i class="fa fa-external-link-alt"></i></span></li>
+<li>CSS 格式化： <span class="exturl" data-url="aHR0cDovL3Rvb2wubGFucmVudHVrdS5jb20vY3NzZm9ybWF0Lw==">http://tool.lanrentuku.com/cssformat/<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <h4 id="Json"><a href="#Json" class="headerlink" title="Json"></a>Json</h4><ul>
-<li>Json 校验、压缩、去转义、转yaml、转实体类： <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.bejson.com/">http://www.bejson.com/</a></li>
-<li>Json 美化、压缩： <a target="_blank" rel="noopener external nofollow noreferrer" href="http://web.chacuo.net/formatjson">http://web.chacuo.net/formatjson</a></li>
-<li>Json 转 yaml： <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.json2yaml.com/">https://www.json2yaml.com/</a></li>
-<li>Json 转 C# : <a target="_blank" rel="noopener external nofollow noreferrer" href="http://json2csharp.com/">http://json2csharp.com/</a></li>
+<li>Json 校验、压缩、去转义、转yaml、转实体类： <span class="exturl" data-url="aHR0cDovL3d3dy5iZWpzb24uY29tLw==">http://www.bejson.com/<i class="fa fa-external-link-alt"></i></span></li>
+<li>Json 美化、压缩： <span class="exturl" data-url="aHR0cDovL3dlYi5jaGFjdW8ubmV0L2Zvcm1hdGpzb24=">http://web.chacuo.net/formatjson<i class="fa fa-external-link-alt"></i></span></li>
+<li>Json 转 yaml： <span class="exturl" data-url="aHR0cHM6Ly93d3cuanNvbjJ5YW1sLmNvbS8=">https://www.json2yaml.com/<i class="fa fa-external-link-alt"></i></span></li>
+<li>Json 转 C# : <span class="exturl" data-url="aHR0cDovL2pzb24yY3NoYXJwLmNvbS8=">http://json2csharp.com/<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <p>JSON Schema 相关资料：</p>
 <ul>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://json-schema.org/">https://json-schema.org/</a></li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://jsonschema.net/">https://jsonschema.net/</a></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9qc29uLXNjaGVtYS5vcmcv">https://json-schema.org/<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9qc29uc2NoZW1hLm5ldC8=">https://jsonschema.net/<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <h3 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h3><ul>
-<li>Unix 时间戳： <a target="_blank" rel="noopener external nofollow noreferrer" href="http://tool.chinaz.com/Tools/unixtime.aspx">http://tool.chinaz.com/Tools/unixtime.aspx</a></li>
-<li>UTC 转本地时间： <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.timebie.com/cn/stduniversal.php">http://www.timebie.com/cn/stduniversal.php</a></li>
-<li>在线秒表： <a target="_blank" rel="noopener external nofollow noreferrer" href="https://miaobiao.51240.com/">https://miaobiao.51240.com/</a></li>
+<li>Unix 时间戳： <span class="exturl" data-url="aHR0cDovL3Rvb2wuY2hpbmF6LmNvbS9Ub29scy91bml4dGltZS5hc3B4">http://tool.chinaz.com/Tools/unixtime.aspx<i class="fa fa-external-link-alt"></i></span></li>
+<li>UTC 转本地时间： <span class="exturl" data-url="aHR0cDovL3d3dy50aW1lYmllLmNvbS9jbi9zdGR1bml2ZXJzYWwucGhw">http://www.timebie.com/cn/stduniversal.php<i class="fa fa-external-link-alt"></i></span></li>
+<li>在线秒表： <span class="exturl" data-url="aHR0cHM6Ly9taWFvYmlhby41MTI0MC5jb20v">https://miaobiao.51240.com/<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
-<h3 id="网页缓存-历史页面"><a href="#网页缓存-历史页面" class="headerlink" title="网页缓存/历史页面"></a>网页缓存/历史页面</h3><h4 id="Internet-Archive"><a href="#Internet-Archive" class="headerlink" title="Internet Archive"></a>Internet Archive</h4><p>官网：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://archive.org/">https://archive.org/</a></p>
+<h3 id="网页缓存-历史页面"><a href="#网页缓存-历史页面" class="headerlink" title="网页缓存/历史页面"></a>网页缓存/历史页面</h3><h4 id="Internet-Archive"><a href="#Internet-Archive" class="headerlink" title="Internet Archive"></a>Internet Archive</h4><p>官网：<span class="exturl" data-url="aHR0cHM6Ly9hcmNoaXZlLm9yZy8=">https://archive.org/<i class="fa fa-external-link-alt"></i></span></p>
 <p>可通过 <code>https://web.archive.org/web/*/</code> 后接完整网址（包括http或https），查看该网址的历史页面。如：<code>https://web.archive.org/web/*/https://www.baidu.com/</code>。</p>
-<p>拖拽 <a href="javascript:window.location.href=' rel="external nofollow noreferrer"https://web.archive.org/web/*/'+window.location.href">Wayback</a> 到书签栏，可一键查看当前网页的历史页面。</p>
+<p>拖拽 <span class="exturl" data-url="amF2YXNjcmlwdDp3aW5kb3cubG9jYXRpb24uaHJlZj0naHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLyovJyt3aW5kb3cubG9jYXRpb24uaHJlZg==">Wayback<i class="fa fa-external-link-alt"></i></span> 到书签栏，可一键查看当前网页的历史页面。</p>
 <h4 id="谷歌缓存"><a href="#谷歌缓存" class="headerlink" title="谷歌缓存"></a>谷歌缓存</h4><p>可通过 <code>https://webcache.googleusercontent.com/search?q=cache:</code> 后接完整网址（包括http或https），查看该网址的页面缓存。</p>
-<p>拖拽 <a href="javascript:window.location.href=' rel="external nofollow noreferrer"https://webcache.googleusercontent.com/search?q=cache:'+window.location.href">Google Cache</a> 到书签栏，可收藏一键查看当前页面Google缓存的快捷方式。</p>
+<p>拖拽 <span class="exturl" data-url="amF2YXNjcmlwdDp3aW5kb3cubG9jYXRpb24uaHJlZj0naHR0cHM6Ly93ZWJjYWNoZS5nb29nbGV1c2VyY29udGVudC5jb20vc2VhcmNoP3E9Y2FjaGU6Jyt3aW5kb3cubG9jYXRpb24uaHJlZg==">Google Cache<i class="fa fa-external-link-alt"></i></span> 到书签栏，可收藏一键查看当前页面Google缓存的快捷方式。</p>
 <h2 id="应用软件"><a href="#应用软件" class="headerlink" title="应用软件"></a>应用软件</h2><p>PDF </p>
 <ul>
-<li>PDFsam <a target="_blank" rel="noopener external nofollow noreferrer" href="https://pdfsam.org/">https://pdfsam.org/</a></li>
-<li>SumatraPDF <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.sumatrapdfreader.org/">https://www.sumatrapdfreader.org/</a></li>
-<li>i2pdf <a target="_blank" rel="noopener external nofollow noreferrer" href="https://freeshell.de/~luis/i2pdf/index.php">https://freeshell.de/~luis/i2pdf/index.php</a></li>
+<li>PDFsam <span class="exturl" data-url="aHR0cHM6Ly9wZGZzYW0ub3JnLw==">https://pdfsam.org/<i class="fa fa-external-link-alt"></i></span></li>
+<li>SumatraPDF <span class="exturl" data-url="aHR0cHM6Ly93d3cuc3VtYXRyYXBkZnJlYWRlci5vcmcv">https://www.sumatrapdfreader.org/<i class="fa fa-external-link-alt"></i></span></li>
+<li>i2pdf <span class="exturl" data-url="aHR0cHM6Ly9mcmVlc2hlbGwuZGUvfmx1aXMvaTJwZGYvaW5kZXgucGhw">https://freeshell.de/~luis/i2pdf/index.php<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <h2 id="小伙伴们"><a href="#小伙伴们" class="headerlink" title="小伙伴们"></a>小伙伴们</h2><ul>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jianshu.com/u/2fd79b98973e">帅气小伙</a></li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://wenbirong.github.io/">Swordsman</a></li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://warmilk.github.io/">Warmilk</a></li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://zhentaojin.github.io/">猫奴码农</a></li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://toonow.coding.me/">快乐的金鱼</a></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vdS8yZmQ3OWI5ODk3M2U=">帅气小伙<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93ZW5iaXJvbmcuZ2l0aHViLmlvLw==">Swordsman<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93YXJtaWxrLmdpdGh1Yi5pby8=">Warmilk<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly96aGVudGFvamluLmdpdGh1Yi5pby8=">猫奴码农<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cDovL3Rvb25vdy5jb2RpbmcubWUv">快乐的金鱼<i class="fa fa-external-link-alt"></i></span></li>
 <li><a href="#%E5%B0%8F%E4%BC%99%E4%BC%B4%E4%BB%AC" title="unavailable"><del>玮仔Wayne</del></a></li>
 <li><a href="#%E5%B0%8F%E4%BC%99%E4%BC%B4%E4%BB%AC" title="unavailable"><del>XRR</del></a></li>
 </ul>
@@ -415,11 +417,14 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/NaturalWill" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;NaturalWill" rel="noopener external nofollow noreferrer" target="_blank"><i class="github fa-fw"></i></a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL05hdHVyYWxXaWxs" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;NaturalWill"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:owner@naturalwill.me" title="E-Mail → mailto:owner@naturalwill.me" rel="noopener" target="_blank"><i class="envelope fa-fw"></i></a>
+        <span class="exturl" data-url="bWFpbHRvOm93bmVyQG5hdHVyYWx3aWxsLm1l" title="E-Mail → mailto:owner@naturalwill.me"><i class="fa fa-envelope fa-fw"></i></span>
       </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
   </div>
 
 
@@ -432,7 +437,7 @@
           <a href="https://blog.naturalwill.me/" title="https:&#x2F;&#x2F;blog.naturalwill.me">Home</a>
         </li>
         <li class="links-of-blogroll-item">
-          <a href="https://naturalwill.gitee.io/" title="https:&#x2F;&#x2F;naturalwill.gitee.io" rel="noopener" target="_blank">Gitee Mirror</a>
+          <span class="exturl" data-url="aHR0cHM6Ly9uYXR1cmFsd2lsbC5naXRlZS5pbw==" title="https:&#x2F;&#x2F;naturalwill.gitee.io">Gitee Mirror</span>
         </li>
     </ul>
   </div>
@@ -462,11 +467,11 @@
   &copy; 2015 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
-    <i class="heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">NaturalWill</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> 强力驱动
   </div>
 
         
